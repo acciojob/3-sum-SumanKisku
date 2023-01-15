@@ -27,14 +27,14 @@ function threeSum(arr, target) {
  
             // If the sum is more closer than
             // the current closest sum
-            if (Math.abs(1*x - sum) < Math.abs(1*x - closestSum))
+            if (Math.abs(1*target - sum) < Math.abs(1*target - closestSum))
             {
                 closestSum = sum;
             }
  
             // If sum is greater than x then decrement
             // the second pointer to get a smaller sum
-            if (sum > x) {
+            if (sum > target) {
                 ptr2--;
             }
  
